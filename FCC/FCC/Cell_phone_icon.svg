@@ -1,0 +1,76 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="17.0" height="17.0">
+
+	<metadata>
+		<rdf:RDF xmlns:rdf = "http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs = "http://www.w3.org/2000/01/rdf-schema#" xmlns:dc = "http://purl.org/dc/elements/1.1/">
+			<rdf:Description rdf:about="http://likethought.com/opacity/">
+				<dc:title>Cell_phone_icon</dc:title>
+				<dc:creator></dc:creator>
+				<dc:rights></dc:rights>
+				<dc:description></dc:description>
+				<dc:format>image/svg+xml</dc:format>
+				<dc:language>en</dc:language>
+			</rdf:Description>
+		</rdf:RDF>
+	</metadata>
+	<g>
+		<title>Layer 1</title>
+		<g transform="translate(3.5, 1.0) scale(0.089, 0.076)">
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg9569"
+   sodipodi:version="0.32"
+   inkscape:version="0.45.1"
+   width="112"
+   height="197"
+   version="1.0"
+   sodipodi:docbase="C:\Temp\_wiki"
+   sodipodi:docname="Cell phone icon.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <metadata
+     id="metadata9574">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs9572" />
+  <sodipodi:namedview
+     inkscape:window-height="998"
+     inkscape:window-width="1280"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     inkscape:zoom="7.1643868"
+     inkscape:cx="49.3455"
+     inkscape:cy="155.45742"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:current-layer="svg9569" />
+  <path
+     style="fill:#000099;fill-opacity:1"
+     d="M 28.746858,190.31911 C 26.682618,189.7709 22.785608,187.33712 20.086858,184.91071 C 11.728268,177.39562 11.999218,179.87054 12.005608,111.09441 C 12.009388,70.369599 12.366768,49.734285 13.115268,47.022546 C 14.742678,41.126574 23.351398,32.809807 28.714658,31.952188 L 32.819698,31.295765 L 33.159858,21.511752 C 33.561208,9.9678712 34.931678,7.5225464 41.000028,7.5225464 C 46.920558,7.5225464 48.000028,9.5569247 48.000028,20.714797 L 48.000028,30.249567 L 65.250028,30.730326 C 80.167758,31.146084 83.050068,31.492757 86.568238,33.294399 C 91.917048,36.033498 97.603388,42.431893 98.927898,47.201767 C 99.621378,49.699137 99.990808,71.829728 99.994448,111.09441 C 100.00084,179.83865 100.26692,177.4 91.943208,184.88373 C 88.861178,187.65474 85.419108,189.6832 82.590388,190.39548 C 77.041498,191.79271 34.066098,191.73175 28.746858,190.31911 z M 89.800028,94.322546 C 91.067968,93.0546 91.603008,52.257454 90.393038,49.104333 C 89.856368,47.705788 85.930038,47.522546 56.500028,47.522546 C 27.070018,47.522546 23.143688,47.705788 22.607018,49.104333 C 21.397048,52.257454 21.932078,93.0546 23.200028,94.322546 C 24.917058,96.039576 88.082998,96.039576 89.800028,94.322546 z "
+     id="path9598" />
+</svg>
+		</g>
+	</g>
+
+</svg>

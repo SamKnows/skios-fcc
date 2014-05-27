@@ -1,0 +1,3 @@
+[submodule "skios-core"]
+	path = skios-core
+	url = git@github.com:SamKnows/skios-core.git

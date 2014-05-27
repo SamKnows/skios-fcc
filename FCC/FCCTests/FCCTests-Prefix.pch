@@ -1,0 +1,11 @@
+//
+// Prefix header for all source files of the 'FCCTests' target in the 'FCCTests' project
+//
+
+#ifdef __OBJC__
+  #import <UIKit/UIKit.h>
+  #import <Foundation/Foundation.h>
+#endif
+
+#import "../../skios-core/libcore/SKCore.h"
+#import "../../skios-core/libcore/UICore/SKAAppDelegate.h"
