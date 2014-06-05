@@ -98,7 +98,7 @@
 
 // By default, throttle query is not supported - we could enable this here, however.
 -(BOOL) isThrottleQuerySupported {
-  return NO;
+  return YES;
 }
 
 -(BOOL) isSocialMediaExportSupported {

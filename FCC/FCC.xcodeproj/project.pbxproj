@@ -101,6 +101,7 @@
 		B2AD24671820FCB0002BA4F3 /* FCCGraphForResultsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2AD24661820FCB0002BA4F3 /* FCCGraphForResultsTests.m */; };
 		B2AF520717CF537800815146 /* FCCSchedulerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2AF520217CF537700815146 /* FCCSchedulerTests.m */; };
 		B2B0770418D73E4600FFAE12 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2B0770318D73E4600FFAE12 /* XCTest.framework */; };
+		B2B0AEAF1935E8F2002637F1 /* operators.json in Resources */ = {isa = PBXBuildFile; fileRef = B2B0AEAE1935E8F2002637F1 /* operators.json */; };
 		B2BE448F17C7955300C96D58 /* FCCHttpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BE448E17C7955300C96D58 /* FCCHttpTests.m */; };
 		B2D358E51920FC260098714D /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2D358E41920FC260098714D /* Entitlements.plist */; };
 		B2DC503D18C86BAE00E69F36 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2DC503C18C86BAE00E69F36 /* CoreText.framework */; };
@@ -215,6 +216,7 @@
 		B2AD24661820FCB0002BA4F3 /* FCCGraphForResultsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCCGraphForResultsTests.m; sourceTree = "<group>"; };
 		B2AF520217CF537700815146 /* FCCSchedulerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCCSchedulerTests.m; sourceTree = "<group>"; };
 		B2B0770318D73E4600FFAE12 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B2B0AEAE1935E8F2002637F1 /* operators.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = operators.json; sourceTree = "<group>"; };
 		B2BE448E17C7955300C96D58 /* FCCHttpTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCCHttpTests.m; sourceTree = "<group>"; };
 		B2D358E41920FC260098714D /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = SOURCE_ROOT; };
 		B2DC503C18C86BAE00E69F36 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
@@ -369,6 +371,7 @@
 		51BC8202174CFB3100415B6A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B2B0AEAE1935E8F2002637F1 /* operators.json */,
 				B281C15F1899558100B19ADB /* Wifiservice.png */,
 				B281C1601899558100B19ADB /* Wifiservice@2x.png */,
 				B281C1611899558100B19ADB /* Cell_phone_icon.png */,
@@ -644,6 +647,7 @@
 				B206589C18521C350097A611 /* Default-iPad-Landscape@2x~ipad.png in Resources */,
 				51C4ABDC17536B47003B4062 /* TICK.png in Resources */,
 				51C4ABDD17536B47003B4062 /* TICK@2x.png in Resources */,
+				B2B0AEAF1935E8F2002637F1 /* operators.json in Resources */,
 				B20659871855DE9F0097A611 /* btn_run@2x.png in Resources */,
 				51C4ABEA17539B3D003B4062 /* RUN@2x.png in Resources */,
 				B2A41C0618D9CD8A00887CD2 /* SETTINGS.png in Resources */,
