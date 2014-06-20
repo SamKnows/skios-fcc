@@ -191,6 +191,7 @@
 		B22E896017C39353005D9094 /* FCCTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FCCTests-Info.plist"; sourceTree = "<group>"; };
 		B22E896217C39353005D9094 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B22E896717C39353005D9094 /* FCCTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FCCTests-Prefix.pch"; sourceTree = "<group>"; };
+		B232599F195467CA00C03C2D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B24140C217C3C29C00ECAE8C /* FCCLocaleEnTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCCLocaleEnTests.m; sourceTree = "<group>"; };
 		B25001DA188FC9FA004287B1 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		B25001DC188FCA07004287B1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -297,6 +298,7 @@
 		51BC81C6174CF73500415B6A = {
 			isa = PBXGroup;
 			children = (
+				B232599F195467CA00C03C2D /* README.md */,
 				B2FB42A4192DF40B00DE371B /* HockeySDK-iOS */,
 				51BC81D8174CF73500415B6A /* FCC */,
 				B22E895E17C39353005D9094 /* FCCTests */,
