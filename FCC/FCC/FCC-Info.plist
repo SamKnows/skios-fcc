@@ -50,11 +50,11 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.82</string>
+	<string>1.83</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>2464</string>
+	<string>2466</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIApplicationExitsOnSuspend</key>
