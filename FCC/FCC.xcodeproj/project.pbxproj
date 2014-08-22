@@ -73,6 +73,9 @@
 		B22E895C17C39353005D9094 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51BC81D2174CF73500415B6A /* UIKit.framework */; };
 		B22E895D17C39353005D9094 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51BC81D4174CF73500415B6A /* Foundation.framework */; };
 		B22E896317C39353005D9094 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B22E896117C39353005D9094 /* InfoPlist.strings */; };
+		B23B636B19A75F32003F381C /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23B636719A75F32003F381C /* HockeySDK.framework */; };
+		B23B636C19A75F33003F381C /* HockeySDK.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B23B636919A75F32003F381C /* HockeySDK.xcconfig */; };
+		B23B636D19A75F33003F381C /* HockeySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B23B636A19A75F32003F381C /* HockeySDKResources.bundle */; };
 		B24140C317C3C29C00ECAE8C /* FCCLocaleEnTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B24140C217C3C29C00ECAE8C /* FCCLocaleEnTests.m */; };
 		B25001DB188FC9FA004287B1 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25001DA188FC9FA004287B1 /* CoreFoundation.framework */; };
 		B25001DD188FCA07004287B1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25001DC188FCA07004287B1 /* CFNetwork.framework */; };
@@ -110,9 +113,6 @@
 		B2E3C09317E1BB5000A01F45 /* Icon_FCC_80.png in Resources */ = {isa = PBXBuildFile; fileRef = B2E3C08D17E1BB5000A01F45 /* Icon_FCC_80.png */; };
 		B2E3C09417E1BB5000A01F45 /* Icon_FCC_60.png in Resources */ = {isa = PBXBuildFile; fileRef = B2E3C08E17E1BB5000A01F45 /* Icon_FCC_60.png */; };
 		B2E3C09517E1BB5000A01F45 /* Icon_FCC_120.png in Resources */ = {isa = PBXBuildFile; fileRef = B2E3C08F17E1BB5000A01F45 /* Icon_FCC_120.png */; };
-		B2FB42B0192DF40B00DE371B /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2FB42A8192DF40B00DE371B /* HockeySDK.framework */; };
-		B2FB42B1192DF40B00DE371B /* HockeySDK.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B2FB42AA192DF40B00DE371B /* HockeySDK.xcconfig */; };
-		B2FB42B2192DF40B00DE371B /* HockeySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B2FB42AB192DF40B00DE371B /* HockeySDKResources.bundle */; };
 		B2FB4308192DFA0C00DE371B /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2FB42FD192DFA0C00DE371B /* libOCMock.a */; };
 		B2FB430E192DFA2600DE371B /* SKTestCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FB430D192DFA2600DE371B /* SKTestCommon.m */; };
 /* End PBXBuildFile section */
@@ -192,6 +192,9 @@
 		B22E896217C39353005D9094 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B22E896717C39353005D9094 /* FCCTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FCCTests-Prefix.pch"; sourceTree = "<group>"; };
 		B232599F195467CA00C03C2D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B23B636719A75F32003F381C /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HockeySDK.framework; sourceTree = "<group>"; };
+		B23B636919A75F32003F381C /* HockeySDK.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = HockeySDK.xcconfig; sourceTree = "<group>"; };
+		B23B636A19A75F32003F381C /* HockeySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HockeySDKResources.bundle; sourceTree = "<group>"; };
 		B24140C217C3C29C00ECAE8C /* FCCLocaleEnTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCCLocaleEnTests.m; sourceTree = "<group>"; };
 		B25001DA188FC9FA004287B1 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		B25001DC188FCA07004287B1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -225,9 +228,6 @@
 		B2E3C08D17E1BB5000A01F45 /* Icon_FCC_80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_FCC_80.png; sourceTree = "<group>"; };
 		B2E3C08E17E1BB5000A01F45 /* Icon_FCC_60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_FCC_60.png; sourceTree = "<group>"; };
 		B2E3C08F17E1BB5000A01F45 /* Icon_FCC_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_FCC_120.png; sourceTree = "<group>"; };
-		B2FB42A8192DF40B00DE371B /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HockeySDK.framework; sourceTree = "<group>"; };
-		B2FB42AA192DF40B00DE371B /* HockeySDK.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = HockeySDK.xcconfig; sourceTree = "<group>"; };
-		B2FB42AB192DF40B00DE371B /* HockeySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HockeySDKResources.bundle; sourceTree = "<group>"; };
 		B2FB42FD192DFA0C00DE371B /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
 		B2FB42FF192DFA0C00DE371B /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
 		B2FB4300192DFA0C00DE371B /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
@@ -255,7 +255,7 @@
 				51766972174E20CB00C34BEA /* QuartzCore.framework in Frameworks */,
 				B21C94E017B0FF170001C7C5 /* CoreData.framework in Frameworks */,
 				51D84EE2174FE08F00AD7794 /* libsqlite3.dylib in Frameworks */,
-				B2FB42B0192DF40B00DE371B /* HockeySDK.framework in Frameworks */,
+				B23B636B19A75F32003F381C /* HockeySDK.framework in Frameworks */,
 				51BC81D3174CF73500415B6A /* UIKit.framework in Frameworks */,
 				51BC81D5174CF73500415B6A /* Foundation.framework in Frameworks */,
 				51BC81D7174CF73500415B6A /* CoreGraphics.framework in Frameworks */,
@@ -458,6 +458,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B23B636619A75F32003F381C /* HockeySDK.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				B23B636719A75F32003F381C /* HockeySDK.framework */,
+				B23B636819A75F32003F381C /* Resources */,
+			);
+			path = HockeySDK.embeddedframework;
+			sourceTree = "<group>";
+		};
+		B23B636819A75F32003F381C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B23B636919A75F32003F381C /* HockeySDK.xcconfig */,
+				B23B636A19A75F32003F381C /* HockeySDKResources.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		B277C6D217F461B400CB054E /* ViewControllerTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -474,28 +492,10 @@
 		B2FB42A4192DF40B00DE371B /* HockeySDK-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				B2FB42A7192DF40B00DE371B /* HockeySDK.embeddedframework */,
+				B23B636619A75F32003F381C /* HockeySDK.embeddedframework */,
 			);
 			name = "HockeySDK-iOS";
 			path = "../skios-core/HockeySDK-iOS";
-			sourceTree = "<group>";
-		};
-		B2FB42A7192DF40B00DE371B /* HockeySDK.embeddedframework */ = {
-			isa = PBXGroup;
-			children = (
-				B2FB42A8192DF40B00DE371B /* HockeySDK.framework */,
-				B2FB42A9192DF40B00DE371B /* Resources */,
-			);
-			path = HockeySDK.embeddedframework;
-			sourceTree = "<group>";
-		};
-		B2FB42A9192DF40B00DE371B /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				B2FB42AA192DF40B00DE371B /* HockeySDK.xcconfig */,
-				B2FB42AB192DF40B00DE371B /* HockeySDKResources.bundle */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		B2FB42F9192DF9E500DE371B /* skios-core */ = {
@@ -640,6 +640,7 @@
 				B2E3C09417E1BB5000A01F45 /* Icon_FCC_60.png in Resources */,
 				B25DE078184E108A006327A6 /* notice1.htm in Resources */,
 				51BC81E9174CF73600415B6A /* Default-568h@2x.png in Resources */,
+				B23B636D19A75F33003F381C /* HockeySDKResources.bundle in Resources */,
 				511BADDD174E2BF300C86B9B /* Localizable.strings in Resources */,
 				512B8A04174E532C00025F37 /* NEXT.png in Resources */,
 				512B8A09174E699000025F37 /* AGREE.png in Resources */,
@@ -655,11 +656,11 @@
 				51C4ABFA1753A3E3003B4062 /* ALERT@2x.png in Resources */,
 				51C4ABFB1753A3E3003B4062 /* ALERT.png in Resources */,
 				B206589B18521C350097A611 /* Default-iPad-Landscape~ipad.png in Resources */,
+				B23B636C19A75F33003F381C /* HockeySDK.xcconfig in Resources */,
 				5185035A1754E84A00729CA7 /* GRAPH_BGD.png in Resources */,
 				5185035B1754E84A00729CA7 /* GRAPH_BGD@2x.png in Resources */,
 				B281C1631899558100B19ADB /* Wifiservice.png in Resources */,
 				B20658961851DBA90097A611 /* network_type@2x.png in Resources */,
-				B2FB42B2192DF40B00DE371B /* HockeySDKResources.bundle in Resources */,
 				B2E3C09017E1BB5000A01F45 /* Icon_FCC_29.png in Resources */,
 				517A9FC9175FAB6C008DC89D /* NEXT_ARROW@2x.png in Resources */,
 				B25DE07A184E108A006327A6 /* notice3.htm in Resources */,
@@ -668,7 +669,6 @@
 				B2A41C0718D9CD8A00887CD2 /* SETTINGS@2x.png in Resources */,
 				517A9FCD175FABD0008DC89D /* BACK_ARROW@2x.png in Resources */,
 				517A9FCE175FABD0008DC89D /* BACK_ARROW.png in Resources */,
-				B2FB42B1192DF40B00DE371B /* HockeySDK.xcconfig in Resources */,
 				B281C1641899558100B19ADB /* Wifiservice@2x.png in Resources */,
 				517A9FD9175FC26E008DC89D /* CALENDAR@2x.png in Resources */,
 				517A9FDA175FC26E008DC89D /* CALENDAR.png in Resources */,
@@ -863,9 +863,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"$(SRCROOT)/../HockeySDK-iOS/HockeySDK.embeddedframework",
-					"/Users/pcole/samknows/skios/skios-core/HockeySDK-iOS/HockeySDK.embeddedframework",
-					"/Users/pcole/samknows/skios/skios-fcc/skios-core/HockeySDK-iOS/HockeySDK.embeddedframework",
+					"$(SRCROOT)/../skios-core/HockeySDK-iOS/HockeySDK.embeddedframework",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FCC/FCC-Prefix.pch";
@@ -874,7 +872,7 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "80B929ED-B30B-4932-972C-2BA8D2758091";
+				PROVISIONING_PROFILE = "AB08552D-906C-4C26-A672-C4E5339F619A";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -888,9 +886,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"$(SRCROOT)/../HockeySDK-iOS/HockeySDK.embeddedframework",
-					"/Users/pcole/samknows/skios/skios-core/HockeySDK-iOS/HockeySDK.embeddedframework",
-					"/Users/pcole/samknows/skios/skios-fcc/skios-core/HockeySDK-iOS/HockeySDK.embeddedframework",
+					"$(SRCROOT)/../skios-core/HockeySDK-iOS/HockeySDK.embeddedframework",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FCC/FCC-Prefix.pch";
@@ -941,9 +937,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"$(SRCROOT)/../HockeySDK-iOS/HockeySDK.embeddedframework",
-					"/Users/pcole/samknows/skios/skios-core/HockeySDK-iOS/HockeySDK.embeddedframework",
-					"/Users/pcole/samknows/skios/skios-fcc/skios-core/HockeySDK-iOS/HockeySDK.embeddedframework",
+					"$(SRCROOT)/../skios-core/HockeySDK-iOS/HockeySDK.embeddedframework",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FCC/FCC-Prefix.pch";
@@ -968,21 +962,19 @@
 					"$(SRCROOT)/../HockeySDK-iOS/HockeySDK.embeddedframework",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"/Users/pcole/samknows/skios/skios-fcc/skios-core/OCMock/OSX",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FCCTests/FCCTests-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../skios-core/OCMock/iOS",
-					"$(SRCROOT)/../skios-core/libcore/UICore",
+					"$(SRCROOT)/../skios-core/libcore/UICore/**",
 					"$(SRCROOT)/../skios-core/libcore/Tests/**",
 				);
 				INFOPLIST_FILE = "FCCTests/FCCTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../OCMock/iOS\"",
-					"/Users/pcole/samknows/skios/skios-fcc/skios-core/OCMock/iOS",
+					"$(SRCROOT)/../skios-core/OCMock/iOS",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1003,21 +995,19 @@
 					"$(SRCROOT)/../HockeySDK-iOS/HockeySDK.embeddedframework",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"/Users/pcole/samknows/skios/skios-fcc/skios-core/OCMock/OSX",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FCCTests/FCCTests-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../skios-core/OCMock/iOS",
-					"$(SRCROOT)/../skios-core/libcore/UICore",
+					"$(SRCROOT)/../skios-core/libcore/UICore/**",
 					"$(SRCROOT)/../skios-core/libcore/Tests/**",
 				);
 				INFOPLIST_FILE = "FCCTests/FCCTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../OCMock/iOS\"",
-					"/Users/pcole/samknows/skios/skios-fcc/skios-core/OCMock/iOS",
+					"$(SRCROOT)/../skios-core/OCMock/iOS",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1038,21 +1028,19 @@
 					"$(SRCROOT)/../HockeySDK-iOS/HockeySDK.embeddedframework",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"/Users/pcole/samknows/skios/skios-fcc/skios-core/OCMock/OSX",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FCCTests/FCCTests-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../skios-core/OCMock/iOS",
-					"$(SRCROOT)/../skios-core/libcore/UICore",
+					"$(SRCROOT)/../skios-core/libcore/UICore/**",
 					"$(SRCROOT)/../skios-core/libcore/Tests/**",
 				);
 				INFOPLIST_FILE = "FCCTests/FCCTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../OCMock/iOS\"",
-					"/Users/pcole/samknows/skios/skios-fcc/skios-core/OCMock/iOS",
+					"$(SRCROOT)/../skios-core/OCMock/iOS",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
