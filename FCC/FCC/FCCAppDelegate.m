@@ -62,6 +62,7 @@
 -(NSString *) getEnterpriseId {
   //return @"GiancarloTest";
   return @"FCC_Public";
+  //return @"SK_Test";
 }
 
 -(NSString *) getBaseUrlString {
