@@ -59,8 +59,6 @@
 	<true/>
 	<key>UIApplicationExitsOnSuspend</key>
 	<false/>
-	<key>UIBackgroundModes</key>
-	<array/>
 	<key>UIFileSharingEnabled</key>
 	<false/>
 	<key>UILaunchImageFile~ipad</key>

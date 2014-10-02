@@ -605,6 +605,14 @@
 				TargetAttributes = {
 					51BC81CE174CF73500415B6A = {
 						DevelopmentTeam = V7JFVV7CG3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
