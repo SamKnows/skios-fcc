@@ -83,8 +83,8 @@
 		B25DE078184E108A006327A6 /* notice1.htm in Resources */ = {isa = PBXBuildFile; fileRef = B25DE075184E108A006327A6 /* notice1.htm */; };
 		B25DE079184E108A006327A6 /* notice2.htm in Resources */ = {isa = PBXBuildFile; fileRef = B25DE076184E108A006327A6 /* notice2.htm */; };
 		B25DE07A184E108A006327A6 /* notice3.htm in Resources */ = {isa = PBXBuildFile; fileRef = B25DE077184E108A006327A6 /* notice3.htm */; };
-		B270634E19EC0E2C00DA493B /* libcore.strings in Resources */ = {isa = PBXBuildFile; fileRef = B270634919EC0E2C00DA493B /* libcore.strings */; };
-		B270634F19EC0E2C00DA493B /* libcore.strings in Resources */ = {isa = PBXBuildFile; fileRef = B270634C19EC0E2C00DA493B /* libcore.strings */; };
+		B270635619EC11DA00DA493B /* libcore.strings in Resources */ = {isa = PBXBuildFile; fileRef = B270635119EC11DA00DA493B /* libcore.strings */; };
+		B270635719EC11DA00DA493B /* libcore.strings in Resources */ = {isa = PBXBuildFile; fileRef = B270635419EC11DA00DA493B /* libcore.strings */; };
 		B277C6CC17F4619E00CB054E /* FCCActivationControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B277C6C617F4619E00CB054E /* FCCActivationControllerTests.m */; };
 		B277C6CD17F4619E00CB054E /* FCCRunTestsControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B277C6C717F4619E00CB054E /* FCCRunTestsControllerTests.m */; };
 		B277C6CE17F4619E00CB054E /* FCCMainResultsControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B277C6C817F4619E00CB054E /* FCCMainResultsControllerTests.m */; };
@@ -204,8 +204,8 @@
 		B25DE075184E108A006327A6 /* notice1.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = notice1.htm; sourceTree = "<group>"; };
 		B25DE076184E108A006327A6 /* notice2.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = notice2.htm; sourceTree = "<group>"; };
 		B25DE077184E108A006327A6 /* notice3.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = notice3.htm; sourceTree = "<group>"; };
-		B270634A19EC0E2C00DA493B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = libcore.strings; sourceTree = "<group>"; };
-		B270634D19EC0E2C00DA493B /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = libcore.strings; sourceTree = "<group>"; };
+		B270635219EC11DA00DA493B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = libcore.strings; sourceTree = "<group>"; };
+		B270635519EC11DA00DA493B /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = libcore.strings; sourceTree = "<group>"; };
 		B277C6C617F4619E00CB054E /* FCCActivationControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCCActivationControllerTests.m; sourceTree = "<group>"; };
 		B277C6C717F4619E00CB054E /* FCCRunTestsControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCCRunTestsControllerTests.m; sourceTree = "<group>"; };
 		B277C6C817F4619E00CB054E /* FCCMainResultsControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCCMainResultsControllerTests.m; sourceTree = "<group>"; };
@@ -484,28 +484,28 @@
 		B270634719EC0E1500DA493B /* SKCore */ = {
 			isa = PBXGroup;
 			children = (
-				B270634819EC0E2C00DA493B /* en.lproj */,
-				B270634B19EC0E2C00DA493B /* pt.lproj */,
+				B270635019EC11DA00DA493B /* en.lproj */,
+				B270635319EC11DA00DA493B /* pt.lproj */,
 			);
 			name = SKCore;
 			sourceTree = "<group>";
 		};
-		B270634819EC0E2C00DA493B /* en.lproj */ = {
+		B270635019EC11DA00DA493B /* en.lproj */ = {
 			isa = PBXGroup;
 			children = (
-				B270634919EC0E2C00DA493B /* libcore.strings */,
+				B270635119EC11DA00DA493B /* libcore.strings */,
 			);
 			name = en.lproj;
-			path = "../../skios-private/skios-core/en.lproj";
+			path = "../skios-core/en.lproj";
 			sourceTree = "<group>";
 		};
-		B270634B19EC0E2C00DA493B /* pt.lproj */ = {
+		B270635319EC11DA00DA493B /* pt.lproj */ = {
 			isa = PBXGroup;
 			children = (
-				B270634C19EC0E2C00DA493B /* libcore.strings */,
+				B270635419EC11DA00DA493B /* libcore.strings */,
 			);
 			name = pt.lproj;
-			path = "../../skios-private/skios-core/pt.lproj";
+			path = "../skios-core/pt.lproj";
 			sourceTree = "<group>";
 		};
 		B277C6D217F461B400CB054E /* ViewControllerTests */ = {
@@ -691,7 +691,7 @@
 				B20659871855DE9F0097A611 /* btn_run@2x.png in Resources */,
 				51C4ABEA17539B3D003B4062 /* RUN@2x.png in Resources */,
 				B2A41C0618D9CD8A00887CD2 /* SETTINGS.png in Resources */,
-				B270634F19EC0E2C00DA493B /* libcore.strings in Resources */,
+				B270635719EC11DA00DA493B /* libcore.strings in Resources */,
 				B25DE071184DE4A9006327A6 /* terms_of_use.htm in Resources */,
 				B281C1661899558100B19ADB /* Cell_phone_icon@2x.png in Resources */,
 				51C4ABEB17539B3D003B4062 /* RUN.png in Resources */,
@@ -700,7 +700,7 @@
 				B206589B18521C350097A611 /* Default-iPad-Landscape~ipad.png in Resources */,
 				B23B636C19A75F33003F381C /* HockeySDK.xcconfig in Resources */,
 				5185035A1754E84A00729CA7 /* GRAPH_BGD.png in Resources */,
-				B270634E19EC0E2C00DA493B /* libcore.strings in Resources */,
+				B270635619EC11DA00DA493B /* libcore.strings in Resources */,
 				5185035B1754E84A00729CA7 /* GRAPH_BGD@2x.png in Resources */,
 				B281C1631899558100B19ADB /* Wifiservice.png in Resources */,
 				B20658961851DBA90097A611 /* network_type@2x.png in Resources */,
@@ -841,18 +841,18 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		B270634919EC0E2C00DA493B /* libcore.strings */ = {
+		B270635119EC11DA00DA493B /* libcore.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B270634A19EC0E2C00DA493B /* en */,
+				B270635219EC11DA00DA493B /* en */,
 			);
 			name = libcore.strings;
 			sourceTree = "<group>";
 		};
-		B270634C19EC0E2C00DA493B /* libcore.strings */ = {
+		B270635419EC11DA00DA493B /* libcore.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B270634D19EC0E2C00DA493B /* pt */,
+				B270635519EC11DA00DA493B /* pt */,
 			);
 			name = libcore.strings;
 			sourceTree = "<group>";
