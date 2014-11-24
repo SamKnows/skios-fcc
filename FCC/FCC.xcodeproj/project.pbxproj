@@ -83,6 +83,9 @@
 		B25DE078184E108A006327A6 /* notice1.htm in Resources */ = {isa = PBXBuildFile; fileRef = B25DE075184E108A006327A6 /* notice1.htm */; };
 		B25DE079184E108A006327A6 /* notice2.htm in Resources */ = {isa = PBXBuildFile; fileRef = B25DE076184E108A006327A6 /* notice2.htm */; };
 		B25DE07A184E108A006327A6 /* notice3.htm in Resources */ = {isa = PBXBuildFile; fileRef = B25DE077184E108A006327A6 /* notice3.htm */; };
+		B2697B491A232F2B0077C360 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2697B481A232F2B0077C360 /* AssetsLibrary.framework */; };
+		B2697B4B1A232F330077C360 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2697B4A1A232F330077C360 /* MobileCoreServices.framework */; };
+		B2697B4D1A232F3A0077C360 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2697B4C1A232F3A0077C360 /* QuickLook.framework */; };
 		B270635619EC11DA00DA493B /* libcore.strings in Resources */ = {isa = PBXBuildFile; fileRef = B270635119EC11DA00DA493B /* libcore.strings */; };
 		B270635719EC11DA00DA493B /* libcore.strings in Resources */ = {isa = PBXBuildFile; fileRef = B270635419EC11DA00DA493B /* libcore.strings */; };
 		B277C6CC17F4619E00CB054E /* FCCActivationControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B277C6C617F4619E00CB054E /* FCCActivationControllerTests.m */; };
@@ -204,6 +207,9 @@
 		B25DE075184E108A006327A6 /* notice1.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = notice1.htm; sourceTree = "<group>"; };
 		B25DE076184E108A006327A6 /* notice2.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = notice2.htm; sourceTree = "<group>"; };
 		B25DE077184E108A006327A6 /* notice3.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = notice3.htm; sourceTree = "<group>"; };
+		B2697B481A232F2B0077C360 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		B2697B4A1A232F330077C360 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B2697B4C1A232F3A0077C360 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
 		B270635219EC11DA00DA493B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = libcore.strings; sourceTree = "<group>"; };
 		B270635519EC11DA00DA493B /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = libcore.strings; sourceTree = "<group>"; };
 		B277C6C617F4619E00CB054E /* FCCActivationControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCCActivationControllerTests.m; sourceTree = "<group>"; };
@@ -248,6 +254,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2697B4D1A232F3A0077C360 /* QuickLook.framework in Frameworks */,
+				B2697B4B1A232F330077C360 /* MobileCoreServices.framework in Frameworks */,
+				B2697B491A232F2B0077C360 /* AssetsLibrary.framework in Frameworks */,
 				B221AEE718FFE4E000323923 /* MessageUI.framework in Frameworks */,
 				B221AEE018FFC26C00323923 /* libz.dylib in Frameworks */,
 				B2DC503D18C86BAE00E69F36 /* CoreText.framework in Frameworks */,
@@ -324,6 +333,9 @@
 		51BC81D1174CF73500415B6A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B2697B4C1A232F3A0077C360 /* QuickLook.framework */,
+				B2697B4A1A232F330077C360 /* MobileCoreServices.framework */,
+				B2697B481A232F2B0077C360 /* AssetsLibrary.framework */,
 				B221AEE618FFE4E000323923 /* MessageUI.framework */,
 				B221AEDF18FFC26C00323923 /* libz.dylib */,
 				B2B0770318D73E4600FFAE12 /* XCTest.framework */,
