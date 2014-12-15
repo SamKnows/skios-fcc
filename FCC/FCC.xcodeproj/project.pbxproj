@@ -86,8 +86,7 @@
 		B2697B491A232F2B0077C360 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2697B481A232F2B0077C360 /* AssetsLibrary.framework */; };
 		B2697B4B1A232F330077C360 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2697B4A1A232F330077C360 /* MobileCoreServices.framework */; };
 		B2697B4D1A232F3A0077C360 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2697B4C1A232F3A0077C360 /* QuickLook.framework */; };
-		B270635619EC11DA00DA493B /* libcore.strings in Resources */ = {isa = PBXBuildFile; fileRef = B270635119EC11DA00DA493B /* libcore.strings */; };
-		B270635719EC11DA00DA493B /* libcore.strings in Resources */ = {isa = PBXBuildFile; fileRef = B270635419EC11DA00DA493B /* libcore.strings */; };
+		B276EB601A3EE996006F84F2 /* libcore.strings in Resources */ = {isa = PBXBuildFile; fileRef = B276EB621A3EE996006F84F2 /* libcore.strings */; };
 		B277C6CC17F4619E00CB054E /* FCCActivationControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B277C6C617F4619E00CB054E /* FCCActivationControllerTests.m */; };
 		B277C6CD17F4619E00CB054E /* FCCRunTestsControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B277C6C717F4619E00CB054E /* FCCRunTestsControllerTests.m */; };
 		B277C6CE17F4619E00CB054E /* FCCMainResultsControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B277C6C817F4619E00CB054E /* FCCMainResultsControllerTests.m */; };
@@ -210,8 +209,10 @@
 		B2697B481A232F2B0077C360 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		B2697B4A1A232F330077C360 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		B2697B4C1A232F3A0077C360 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
-		B270635219EC11DA00DA493B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = libcore.strings; sourceTree = "<group>"; };
-		B270635519EC11DA00DA493B /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = libcore.strings; sourceTree = "<group>"; };
+		B276EB611A3EE996006F84F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/libcore.strings; sourceTree = "<group>"; };
+		B276EB631A3EE99E006F84F2 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/libcore.strings; sourceTree = "<group>"; };
+		B276EB641A3EE9AA006F84F2 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/libcore.strings"; sourceTree = "<group>"; };
+		B276EB651A3EE9AC006F84F2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/libcore.strings"; sourceTree = "<group>"; };
 		B277C6C617F4619E00CB054E /* FCCActivationControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCCActivationControllerTests.m; sourceTree = "<group>"; };
 		B277C6C717F4619E00CB054E /* FCCRunTestsControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCCRunTestsControllerTests.m; sourceTree = "<group>"; };
 		B277C6C817F4619E00CB054E /* FCCMainResultsControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCCMainResultsControllerTests.m; sourceTree = "<group>"; };
@@ -496,28 +497,17 @@
 		B270634719EC0E1500DA493B /* SKCore */ = {
 			isa = PBXGroup;
 			children = (
-				B270635019EC11DA00DA493B /* en.lproj */,
-				B270635319EC11DA00DA493B /* pt.lproj */,
+				B276EB4D1A3EE950006F84F2 /* strings */,
 			);
 			name = SKCore;
 			sourceTree = "<group>";
 		};
-		B270635019EC11DA00DA493B /* en.lproj */ = {
+		B276EB4D1A3EE950006F84F2 /* strings */ = {
 			isa = PBXGroup;
 			children = (
-				B270635119EC11DA00DA493B /* libcore.strings */,
+				B276EB621A3EE996006F84F2 /* libcore.strings */,
 			);
-			name = en.lproj;
-			path = "../skios-core/en.lproj";
-			sourceTree = "<group>";
-		};
-		B270635319EC11DA00DA493B /* pt.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				B270635419EC11DA00DA493B /* libcore.strings */,
-			);
-			name = pt.lproj;
-			path = "../skios-core/pt.lproj";
+			name = strings;
 			sourceTree = "<group>";
 		};
 		B277C6D217F461B400CB054E /* ViewControllerTests */ = {
@@ -669,6 +659,8 @@
 				es,
 				nl,
 				pt,
+				"zh-Hans",
+				"zh-Hant",
 			);
 			mainGroup = 51BC81C6174CF73500415B6A;
 			productRefGroup = 51BC81D0174CF73500415B6A /* Products */;
@@ -703,7 +695,6 @@
 				B20659871855DE9F0097A611 /* btn_run@2x.png in Resources */,
 				51C4ABEA17539B3D003B4062 /* RUN@2x.png in Resources */,
 				B2A41C0618D9CD8A00887CD2 /* SETTINGS.png in Resources */,
-				B270635719EC11DA00DA493B /* libcore.strings in Resources */,
 				B25DE071184DE4A9006327A6 /* terms_of_use.htm in Resources */,
 				B281C1661899558100B19ADB /* Cell_phone_icon@2x.png in Resources */,
 				51C4ABEB17539B3D003B4062 /* RUN.png in Resources */,
@@ -712,7 +703,7 @@
 				B206589B18521C350097A611 /* Default-iPad-Landscape~ipad.png in Resources */,
 				B23B636C19A75F33003F381C /* HockeySDK.xcconfig in Resources */,
 				5185035A1754E84A00729CA7 /* GRAPH_BGD.png in Resources */,
-				B270635619EC11DA00DA493B /* libcore.strings in Resources */,
+				B276EB601A3EE996006F84F2 /* libcore.strings in Resources */,
 				5185035B1754E84A00729CA7 /* GRAPH_BGD@2x.png in Resources */,
 				B281C1631899558100B19ADB /* Wifiservice.png in Resources */,
 				B20658961851DBA90097A611 /* network_type@2x.png in Resources */,
@@ -853,20 +844,16 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		B270635119EC11DA00DA493B /* libcore.strings */ = {
+		B276EB621A3EE996006F84F2 /* libcore.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B270635219EC11DA00DA493B /* en */,
+				B276EB611A3EE996006F84F2 /* en */,
+				B276EB631A3EE99E006F84F2 /* pt */,
+				B276EB641A3EE9AA006F84F2 /* zh-Hant */,
+				B276EB651A3EE9AC006F84F2 /* zh-Hans */,
 			);
 			name = libcore.strings;
-			sourceTree = "<group>";
-		};
-		B270635419EC11DA00DA493B /* libcore.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B270635519EC11DA00DA493B /* pt */,
-			);
-			name = libcore.strings;
+			path = "../../skios-private/skios-core/strings";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -943,7 +930,7 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "03fefd5f-013b-4819-8e76-bc9ddcfd0b88";
+				PROVISIONING_PROFILE = "2d7fc944-b068-4c76-8431-fbc17d6c7072";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};

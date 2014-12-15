@@ -11,7 +11,13 @@
 
 int main(int argc, char *argv[])
 {
-    @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([FCCAppDelegate class]));
-    }
+  @autoreleasepool {
+    // http://stackoverflow.com/questions/108183/how-to-prevent-sigpipes-or-handle-them-properly
+    // Generally you'd set the SIGPIPE handler to SIG_IGN if you think your app will ever write to a
+    // broken socket/pipe. It's usually much easier to handle the error on write, than to do
+    // anything intelligent in a SIGPIPE handler.
+    signal(SIGPIPE, SIG_IGN);
+    
+    return UIApplicationMain(argc, argv, nil, NSStringFromClass([FCCAppDelegate class]));
+  }
 }
