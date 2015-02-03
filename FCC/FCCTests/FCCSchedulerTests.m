@@ -7,7 +7,6 @@
 
 #import <XCTest/XCTest.h>
 #import "OCMock/OCMock.h"
-#import "SKAScheduler.h"
 
 @interface FCCSchedulerTests : XCTestCase
 
@@ -31,7 +30,7 @@
 
 - (void)testSKSchedulerOverrides
 {
-  SKAScheduler *scheduler = [[SKAScheduler alloc] init];
+  SKScheduler *scheduler = [[SKScheduler alloc] init];
   
   XCTAssertFalse([scheduler shouldSortTests], @"");
   XCTAssertTrue([scheduler shouldStoreScheduleVersion], @"");

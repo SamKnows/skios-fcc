@@ -8,13 +8,11 @@
 #import <XCTest/XCTest.h>
 #import "OCMock/OCMock.h"
 
-#import "SKAHttpTest.h"
-
-@interface SKAHttpTest()
+@interface SKHttpTest()
 - (void)storeOutputResults;
 @end
 
-@interface FCCHttpTests : XCTestCase
+@interface FCCHttpTests : XCTestCase<SKHttpTestDelegate>
 
 @end
 
@@ -30,8 +28,21 @@
   [super tearDown];
 }
 
-- (SKAHttpTest *)createHttpTestInstance {
-  SKAHttpTest *httpTest = [[SKAHttpTest alloc] initWithTarget:@"localhost"
+- (void)htdUpdateStatus:(TransferStatus)status
+               threadId:(NSUInteger)threadId {}
+
+- (void)htdDidTransferData:(NSUInteger)totalBytes
+                     bytes:(NSUInteger)bytes
+                  progress:(float)progress
+                  threadId:(NSUInteger)threadId {}
+
+- (void)htdDidUpdateTotalProgress:(float)progress currentBitrate:(double)currentBitrate {}
+
+- (void)htdDidCompleteHttpTest:(double)bitrateMpbs1024Based
+            ResultIsFromServer:(BOOL)resultIsFromServer {}
+
+- (SKHttpTest *)createHttpTestInstance {
+  SKHttpTest *httpTest = [[SKHttpTest alloc] initWithTarget:@"localhost"
                                                          port:0
                                                          file:nil
                                                  isDownstream:NO
@@ -39,21 +50,21 @@
                                                warmupMaxBytes:0
                                               TransferMaxTimeMicroseconds:15000000
                                              transferMaxBytes:0                                                     nThreads:1
-                                                     HttpTestDelegate:nil];
+                                                     HttpTestDelegate:self];
   return httpTest;
 }
 
 -(void) testHttpIsAsync {
   
-  SKAHttpTest *httpTest = [self createHttpTestInstance];
+  SKHttpTest *httpTest = [self createHttpTestInstance];
   
   XCTAssertFalse([httpTest getTestIsAsyncFlag], @"SKA - httpTest must be async == NO");
 }
 
 -(void) testHttpStoreOutputResult {
   
-  SKAHttpTest *httpTest = [self createHttpTestInstance];
-  XCTAssertNil(httpTest.outputResultsDictionary, @"");
+  SKHttpTest *httpTest = [self createHttpTestInstance];
+  XCTAssertNotNil(httpTest.outputResultsDictionary, @"");
  
   [httpTest storeOutputResults];
   

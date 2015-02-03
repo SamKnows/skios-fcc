@@ -8,10 +8,6 @@
 #import <XCTest/XCTest.h>
 #import "OCMock/OCMock.h"
 
-#import "SKAHttpTest.h"
-#import "SKALatencyTest.h"
-#import "SKALatencyOperation.h"
-
 #import "../../skios-core/libcore/SKCoreTests/SKTestCommon.h"
 
 @interface FCCLatencyOperationTests : XCTestCase<SKLatencyOperationDelegate>
@@ -54,15 +50,17 @@
   
 - (void)lodUpdateStatus:(LatencyStatus)status_ threadId:(NSUInteger)threadId {
 }
-  
+
+- (void)lodUpdateProgress:(float)progress_ threadId:(NSUInteger)threadId latency:(float)latency_ {}
+
 
 -(void) testLatencyOperationFactoryMethod {
   
   DummyLatencyTest *theDummyTest = [[DummyLatencyTest alloc] init];
   
-  SKLatencyOperation *latencyOperation = [SKALatencyTest createLatencyOperationWithTarget:@"localhost" port:1 numDatagrams:2 interPacketTime:3.0 delayTimeout:4.0 percentile:5 maxExecutionTime:6.0 threadId:7 TheTest:theDummyTest LatencyOperationDelegate:self];
+  SKLatencyOperation *latencyOperation = [SKLatencyTest createLatencyOperationWithTarget:@"localhost" port:1 numDatagrams:2 interPacketTime:3.0 delayTimeout:4.0 percentile:5 maxExecutionTime:6.0 threadId:7 TheTest:theDummyTest LatencyOperationDelegate:self];
   
-  XCTAssertTrue([latencyOperation class] == [SKALatencyOperation class], @"");
+  XCTAssertTrue([latencyOperation class] == [SKLatencyOperation class], @"");
   XCTAssertTrue([latencyOperation.target isEqualToString:@"localhost"], @"");
   XCTAssertTrue((latencyOperation.port == 1), @"");
   XCTAssertTrue((latencyOperation.numDatagrams == 2), @"");

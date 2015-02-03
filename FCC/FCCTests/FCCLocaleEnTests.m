@@ -8,10 +8,7 @@
 #import <XCTest/XCTest.h>
 #import "OCMock/OCMock.h"
 
-#import "SKAHttpTest.h"
-#import "SKALatencyTest.h"
-
-@interface FCCLocaleEnTests : XCTestCase
+@interface FCCLocaleEnTests : XCTestCase<SKHttpTestDelegate, SKLatencyTestDelegate>
 
 @end
 
@@ -34,6 +31,26 @@
   [super tearDown];
 }
 
+- (void)htdUpdateStatus:(TransferStatus)status
+               threadId:(NSUInteger)threadId {}
+
+- (void)htdDidTransferData:(NSUInteger)totalBytes
+                     bytes:(NSUInteger)bytes
+                  progress:(float)progress
+                  threadId:(NSUInteger)threadId {}
+
+- (void)htdDidUpdateTotalProgress:(float)progress currentBitrate:(double)currentBitrate {}
+
+- (void)htdDidCompleteHttpTest:(double)bitrateMpbs1024Based
+            ResultIsFromServer:(BOOL)resultIsFromServer {}
+
+- (void)ltdTestDidFail {}
+- (void)ltdTestDidSucceed {}
+- (void)ltdTestWasCancelled {}
+- (void)ltdUpdateProgress:(float)progress latency:(float)latency {}
+- (void)ltdUpdateStatus:(LatencyStatus)status {}
+- (void)ltdTestDidSendPacket:(NSUInteger)bytes {}
+
 - (void)doVerifyTheStringId:(NSString*)stringId theActualValue:(NSString*)theActualValue theExpectedValue:(NSString*)theExpectedValue {
   NSString *expected = NSLocalizedString(stringId,nil);
   XCTAssertNotNil(expected, @"stringId not nil");
@@ -52,16 +69,16 @@
 {
   [[NSUserDefaults standardUserDefaults] setObject: [NSArray arrayWithObjects:@"en", nil] forKey:@"AppleLanguages"];
   
-  [self doVerifyTheStringId:@"to_UpStream" theActualValue:[SKTransferOperation getUpStream] theExpectedValue:@"upstream"];
-  [self doVerifyTheStringId:@"to_DownStream" theActualValue:[SKTransferOperation getDownStream] theExpectedValue:@"downstream"];
-  [self doVerifyTheStringId:@"to_StatusInitializing" theActualValue:[SKTransferOperation getStatusInitializing] theExpectedValue:@"Initializing"];
-  [self doVerifyTheStringId:@"to_StatusWarming" theActualValue:[SKTransferOperation getStatusWarming] theExpectedValue:@"Warming"];
-  [self doVerifyTheStringId:@"to_StatusTransferring" theActualValue:[SKTransferOperation getStatusTransferring] theExpectedValue:@"Transferring"];
-  [self doVerifyTheStringId:@"to_StatusComplete" theActualValue:[SKTransferOperation getStatusComplete] theExpectedValue:@"Complete"];
-  [self doVerifyTheStringId:@"to_StatusCancelled" theActualValue:[SKTransferOperation getStatusCancelled] theExpectedValue:@"Cancelled"];
-  [self doVerifyTheStringId:@"to_StatusFailed" theActualValue:[SKTransferOperation getStatusFailed] theExpectedValue:@"Failed"];
-  [self doVerifyTheStringId:@"to_StatusFinished" theActualValue:[SKTransferOperation getStatusFinished] theExpectedValue:@"Finished"];
-  [self doVerifyTheStringId:@"to_StatusIdle" theActualValue:[SKTransferOperation getStatusIdle] theExpectedValue:@"Idle"];
+  [self doVerifyTheStringId:sSKCoreGetLocalisedString(@"to_UpStream") theActualValue:[SKTransferOperation getUpStream] theExpectedValue:@"upstream"];
+  [self doVerifyTheStringId:sSKCoreGetLocalisedString(@"to_DownStream") theActualValue:[SKTransferOperation getDownStream] theExpectedValue:@"downstream"];
+  [self doVerifyTheStringId:sSKCoreGetLocalisedString(@"to_StatusInitializing") theActualValue:[SKTransferOperation getStatusInitializing] theExpectedValue:@"Initializing"];
+  [self doVerifyTheStringId:sSKCoreGetLocalisedString(@"to_StatusWarming") theActualValue:[SKTransferOperation getStatusWarming] theExpectedValue:@"Warming"];
+  [self doVerifyTheStringId:sSKCoreGetLocalisedString(@"to_StatusTransferring") theActualValue:[SKTransferOperation getStatusTransferring] theExpectedValue:@"Transferring"];
+  [self doVerifyTheStringId:sSKCoreGetLocalisedString(@"to_StatusComplete") theActualValue:[SKTransferOperation getStatusComplete] theExpectedValue:@"Complete"];
+  [self doVerifyTheStringId:sSKCoreGetLocalisedString(@"to_StatusCancelled") theActualValue:[SKTransferOperation getStatusCancelled] theExpectedValue:@"Cancelled"];
+  [self doVerifyTheStringId:sSKCoreGetLocalisedString(@"to_StatusFailed") theActualValue:[SKTransferOperation getStatusFailed] theExpectedValue:@"Failed"];
+  [self doVerifyTheStringId:sSKCoreGetLocalisedString(@"to_StatusFinished") theActualValue:[SKTransferOperation getStatusFinished] theExpectedValue:@"Finished"];
+  [self doVerifyTheStringId:sSKCoreGetLocalisedString(@"to_StatusIdle") theActualValue:[SKTransferOperation getStatusIdle] theExpectedValue:@"Idle"];
   
   // http://stackoverflow.com/questions/12308297/some-of-my-unit-tests-tests-are-not-finishing-in-xcode-4-4
   // Required for tests to be detected as completing!
@@ -72,15 +89,15 @@
 {
   [[NSUserDefaults standardUserDefaults] setObject: [NSArray arrayWithObjects:@"en", nil] forKey:@"AppleLanguages"];
   
-  [self doVerifyTheStringId:@"lo_Idle" theActualValue:[SKLatencyOperation getIdleStatus] theExpectedValue:@"Idle"];
-  [self doVerifyTheStringId:@"lo_Initializing" theActualValue:[SKLatencyOperation getInitializingStatus] theExpectedValue:@"Initializing"];
-  [self doVerifyTheStringId:@"lo_Running" theActualValue:[SKLatencyOperation getRunningStatus] theExpectedValue:@"Running"];
-  [self doVerifyTheStringId:@"lo_Complete" theActualValue:[SKLatencyOperation getCompleteStatus] theExpectedValue:@"Complete"];
-  [self doVerifyTheStringId:@"lo_Finished" theActualValue:[SKLatencyOperation getFinishedStatus] theExpectedValue:@"Finished"];
-  [self doVerifyTheStringId:@"lo_Cancelled" theActualValue:[SKLatencyOperation getCancelledStatus] theExpectedValue:@"Cancelled"];
-  [self doVerifyTheStringId:@"lo_Timeout" theActualValue:[SKLatencyOperation getTimeoutStatus] theExpectedValue:@"Timeout"];
-  [self doVerifyTheStringId:@"lo_Searching" theActualValue:[SKLatencyOperation getSearchingStatus] theExpectedValue:@"Searching..."];
-  [self doVerifyTheStringId:@"lo_Failed" theActualValue:[SKLatencyOperation getFailedStatus] theExpectedValue:@"Failed"];
+  [self doVerifyTheStringId:sSKCoreGetLocalisedString(@"lo_Idle") theActualValue:[SKLatencyOperation getIdleStatus] theExpectedValue:@"Idle"];
+  [self doVerifyTheStringId:sSKCoreGetLocalisedString(@"lo_Initializing") theActualValue:[SKLatencyOperation getInitializingStatus] theExpectedValue:@"Initializing"];
+  [self doVerifyTheStringId:sSKCoreGetLocalisedString(@"lo_Running")  theActualValue:[SKLatencyOperation getRunningStatus]   theExpectedValue:@"Running"];
+  [self doVerifyTheStringId:sSKCoreGetLocalisedString(@"lo_Complete")  theActualValue:[SKLatencyOperation getCompleteStatus]   theExpectedValue:@"Complete"];
+  [self doVerifyTheStringId:sSKCoreGetLocalisedString(@"lo_Finished") theActualValue:[SKLatencyOperation getFinishedStatus] theExpectedValue:@"Finished"];
+  [self doVerifyTheStringId:sSKCoreGetLocalisedString(@"lo_Cancelled") theActualValue:[SKLatencyOperation getCancelledStatus] theExpectedValue:@"Cancelled"];
+  [self doVerifyTheStringId:sSKCoreGetLocalisedString(@"lo_Timeout") theActualValue:[SKLatencyOperation getTimeoutStatus] theExpectedValue:@"Timeout"];
+  [self doVerifyTheStringId:sSKCoreGetLocalisedString(@"lo_Searching") theActualValue:[SKLatencyOperation getSearchingStatus] theExpectedValue:@"Searching..."];
+  [self doVerifyTheStringId:sSKCoreGetLocalisedString(@"lo_Failed") theActualValue:[SKLatencyOperation getFailedStatus] theExpectedValue:@"Failed"];
   XCTAssertTrue([[SKLatencyOperation getStringSpace] isEqualToString:@"SKTESTSPACE"], @"[SKLatencyOperation getStringSpace] returns SKTESTSPACE");
   
   // http://stackoverflow.com/questions/12308297/some-of-my-unit-tests-tests-are-not-finishing-in-xcode-4-4
@@ -93,7 +110,7 @@
   [[NSUserDefaults standardUserDefaults] setObject: [NSArray arrayWithObjects:@"en", nil] forKey:@"AppleLanguages"];
   
   
-  SKAHttpTest *httpTest = [[SKAHttpTest alloc] initWithTarget:nil
+  SKHttpTest *httpTest = [[SKHttpTest alloc] initWithTarget:nil
                                                          port:0
                                                          file:nil
                                                  isDownstream:NO
@@ -101,7 +118,7 @@
                                                warmupMaxBytes:0
                                               TransferMaxTimeMicroseconds:15000000
                                              transferMaxBytes:0                                                    nThreads:1
-                                                     HttpTestDelegate:nil];
+                                                     HttpTestDelegate:self];
   
   XCTAssertFalse([httpTest isSuccessful], @"");
   httpTest.testOK = NO;
@@ -123,14 +140,14 @@
   [[NSUserDefaults standardUserDefaults] setObject: [NSArray arrayWithObjects:@"en", nil] forKey:@"AppleLanguages"];
   
   
-  SKLatencyTest *latencyTest = [[SKALatencyTest alloc] initWithTarget:@"localhost"
+  SKLatencyTest *latencyTest = [[SKLatencyTest alloc] initWithTarget:@"localhost"
                                                                 port:99
-                                                        numDatagrams:1
+                                                        numDatagrams:0
                                                      interPacketTime:100
                                                         delayTimeout:1000
                                                           percentile:50
                                                     maxExecutionTime:2000
-                                                            LatencyTestDelegate:nil];
+                                                            LatencyTestDelegate:self];
   
   XCTAssertFalse(latencyTest.testOK, @"");
   

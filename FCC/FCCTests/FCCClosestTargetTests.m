@@ -8,10 +8,6 @@
 #import <XCTest/XCTest.h>
 #import "OCMock/OCMock.h"
 
-#import "SKAHttpTest.h"
-#import "SKALatencyTest.h"
-#import "SKALatencyOperation.h"
-#import "SKAClosestTargetTest.h"
 
 @interface FCCClosestTargetTests : XCTestCase<SKClosestTargetDelegate>
 
@@ -37,14 +33,17 @@
 
 - (void)ctdDidSendPacket:(NSUInteger)bytes {
 }
+
+- (void)ctdDidStartTargetTesting {}
+- (void)ctdDidFinishAnotherTarget:(int)targetId withLatency:(double)latency withBest:(int)bestId {}
   
 
 -(void) testStartTestMethod {
   
   NSArray *targetArray = @[@"localhost"];
   
-  SKAClosestTargetTest *closestTarget =
-  [[SKAClosestTargetTest alloc] initWithTargets:targetArray ClosestTargetDelegate:self NumDatagrams:4];
+  SKClosestTargetTest *closestTarget =
+  [[SKClosestTargetTest alloc] initWithTargets:targetArray ClosestTargetDelegate:self NumDatagrams:0];
   
   // There are various behaviours that now happen!
   [closestTarget startTest];
@@ -54,7 +53,7 @@
   
   for (SKLatencyOperation *latencyOperation in operationsInQueue)
   {
-    XCTAssertTrue([latencyOperation class] == [SKALatencyOperation class], @"");
+    XCTAssertTrue([latencyOperation class] == [SKLatencyOperation class], @"");
     XCTAssertTrue([latencyOperation.target isEqualToString:targetArray[0]], @"");
   }
 }

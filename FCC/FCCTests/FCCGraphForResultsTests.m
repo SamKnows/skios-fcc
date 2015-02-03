@@ -64,8 +64,8 @@
   XCTAssertNotNil(self.graph.mpCorePlotDataPoints, @"");
   XCTAssertNotNil(self.graph.mpCorePlotDates, @"");
  
-  XCTAssertTrue((self.graph.mpCorePlotDataPoints.count == 7), @"");
-  XCTAssertTrue((self.graph.mpCorePlotDates.count == 7), @"");
+  XCTAssertTrue((self.graph.mpCorePlotDataPoints.count == 1), @"");
+  XCTAssertTrue((self.graph.mpCorePlotDates.count == 1), @"");
   
   NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
   [dateFormatter setDateFormat:@"yyyy-MM-dd"];
@@ -77,7 +77,7 @@
     NSLog(@"date[%d]=%@", dateIndex, dateString);
     
     if (dateIndex == 0) {
-      XCTAssertTrue([dateString isEqualToString:@"2013-10-18"], @"");
+      XCTAssertTrue([dateString isEqualToString:@"2013-10-23"], @"");
     } else if (dateIndex == 6) {
       XCTAssertTrue([dateString isEqualToString:@"2013-10-24"], @"");
     }
@@ -93,7 +93,8 @@
     } else if (valueIndex == 6) {
       XCTAssertTrue(([value doubleValue] == 8.33), @"");
     } else {
-      XCTAssertTrue([self.graph.mpCorePlotDataPoints[0] isEqualToString:@""], @"");
+      NSNumber *value = (NSNumber*)self.graph.mpCorePlotDataPoints[0];
+      XCTAssertTrue(([value doubleValue] == 8.33), @"");
     }
     valueIndex++;
   }
@@ -129,8 +130,8 @@
   XCTAssertTrue((self.graph.corePlotMaxValue == 17.603488), @"");
   XCTAssertNotNil(self.graph.mpCorePlotDataPoints, @"");
   XCTAssertNotNil(self.graph.mpCorePlotDates, @"");
-  XCTAssertTrue((self.graph.mpCorePlotDataPoints.count == 9), @"");
-  XCTAssertTrue((self.graph.mpCorePlotDates.count == 9), @"");
+  XCTAssertTrue((self.graph.mpCorePlotDataPoints.count == 1), @"");
+  XCTAssertTrue((self.graph.mpCorePlotDates.count == 1), @"");
   
   NSLog(@"self.graph.mpCorePlotDataPoints= %@", self.graph.mpCorePlotDataPoints);
   NSLog(@"self.graph.mpCorePlotDates = %@", self.graph.mpCorePlotDates);
@@ -146,7 +147,7 @@
     NSLog(@"date[%d]=%@", dateIndex, dateString);
     
     if (dateIndex == 0) {
-      XCTAssertTrue([dateString isEqualToString:@"2013-10-22"], @"");
+      XCTAssertTrue([dateString isEqualToString:@"2013-10-29"], @"");
     } else if (dateIndex == 8) {
       XCTAssertTrue([dateString isEqualToString:@"2013-10-29"], @"");
     }
@@ -160,7 +161,8 @@
     if (valueIndex == 8) {
       XCTAssertTrue(([value doubleValue] == 17.603488), @"");
     } else {
-      XCTAssertTrue([self.graph.mpCorePlotDataPoints[0] isEqualToString:@""], @"");
+      NSNumber *value = (NSNumber*)self.graph.mpCorePlotDataPoints[0];
+      XCTAssertTrue(([value doubleValue] == 17.603488), @"");
     }
     valueIndex++;
   }
