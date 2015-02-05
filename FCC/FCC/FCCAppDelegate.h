@@ -9,6 +9,11 @@
 
 #import <HockeySDK/HockeySDK.h>
 
+
+@interface FCCAppBehaviourDelegate : SKAppBehaviourDelegate
+
+@end
+
 @interface FCCAppDelegate : SKAAppDelegate<BITHockeyManagerDelegate>
 
 @end

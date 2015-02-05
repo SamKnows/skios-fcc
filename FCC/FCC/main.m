@@ -9,6 +9,8 @@
 
 #import "FCCAppDelegate.h"
 
+FCCAppBehaviourDelegate *sAppBehaviour = nil;
+
 int main(int argc, char *argv[])
 {
   @autoreleasepool {
@@ -17,6 +19,8 @@ int main(int argc, char *argv[])
     // broken socket/pipe. It's usually much easier to handle the error on write, than to do
     // anything intelligent in a SIGPIPE handler.
     signal(SIGPIPE, SIG_IGN);
+    
+    sAppBehaviour = [[FCCAppBehaviourDelegate alloc] init];
     
     return UIApplicationMain(argc, argv, nil, NSStringFromClass([FCCAppDelegate class]));
   }
