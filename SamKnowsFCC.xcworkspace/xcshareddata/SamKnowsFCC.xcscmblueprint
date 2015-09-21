@@ -1,28 +1,28 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "770312C35F9670E545ECEE265341B0D08BAA69AF+++1603D6D",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "770312C35F9670E545ECEE265341B0D08BAA69AF+++82592AA",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "D91EDEB9FA0CF30BABCAAC7AB6EA10F9FC3CE8AD+++CCAC1F2" : 0,
-    "D91EDEB9FA0CF30BABCAAC7AB6EA10F9FC3CE8AD+++C8E73CE" : 0,
-    "D91EDEB9FA0CF30BABCAAC7AB6EA10F9FC3CE8AD+++FE35879" : 0,
-    "FF60F452D9D908C39D3F64D249797A91096C51B0+++E61CEA2" : 0,
-    "FF60F452D9D908C39D3F64D249797A91096C51B0+++98C9FE1" : 0,
-    "FF60F452D9D908C39D3F64D249797A91096C51B0+++977F4D6" : 0,
-    "48E6D7BDDF5E0C90AACE8C0577A9CBF3B9CE49EF+++89AF249" : 0,
-    "770312C35F9670E545ECEE265341B0D08BAA69AF+++1603D6D" : 0
+    "D91EDEB9FA0CF30BABCAAC7AB6EA10F9FC3CE8AD+++A0A225D" : 0,
+    "FF60F452D9D908C39D3F64D249797A91096C51B0+++B841C7B" : 0,
+    "FF60F452D9D908C39D3F64D249797A91096C51B0+++CC48F11" : 0,
+    "D91EDEB9FA0CF30BABCAAC7AB6EA10F9FC3CE8AD+++869D97C" : 0,
+    "D91EDEB9FA0CF30BABCAAC7AB6EA10F9FC3CE8AD+++48EF10A" : 0,
+    "FF60F452D9D908C39D3F64D249797A91096C51B0+++5851008" : 0,
+    "48E6D7BDDF5E0C90AACE8C0577A9CBF3B9CE49EF+++35010DE" : 0,
+    "770312C35F9670E545ECEE265341B0D08BAA69AF+++82592AA" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "171EF298-7DA0-4E0F-8A2A-E12AB704AC25",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "D91EDEB9FA0CF30BABCAAC7AB6EA10F9FC3CE8AD+++CCAC1F2" : "",
-    "D91EDEB9FA0CF30BABCAAC7AB6EA10F9FC3CE8AD+++C8E73CE" : "",
-    "D91EDEB9FA0CF30BABCAAC7AB6EA10F9FC3CE8AD+++FE35879" : "",
-    "FF60F452D9D908C39D3F64D249797A91096C51B0+++E61CEA2" : "skios-private\/skios-core\/",
-    "FF60F452D9D908C39D3F64D249797A91096C51B0+++98C9FE1" : "skios-fccskios-core",
-    "FF60F452D9D908C39D3F64D249797A91096C51B0+++977F4D6" : "skios-fcc\/skios-core\/",
-    "48E6D7BDDF5E0C90AACE8C0577A9CBF3B9CE49EF+++89AF249" : "skios-private",
-    "770312C35F9670E545ECEE265341B0D08BAA69AF+++1603D6D" : "skios-fcc"
+    "D91EDEB9FA0CF30BABCAAC7AB6EA10F9FC3CE8AD+++A0A225D" : "",
+    "FF60F452D9D908C39D3F64D249797A91096C51B0+++B841C7B" : "skios-private\/skios-core\/",
+    "FF60F452D9D908C39D3F64D249797A91096C51B0+++CC48F11" : "skios-fccskios-core",
+    "D91EDEB9FA0CF30BABCAAC7AB6EA10F9FC3CE8AD+++869D97C" : "",
+    "D91EDEB9FA0CF30BABCAAC7AB6EA10F9FC3CE8AD+++48EF10A" : "",
+    "FF60F452D9D908C39D3F64D249797A91096C51B0+++5851008" : "skios-fcc\/skios-core\/",
+    "48E6D7BDDF5E0C90AACE8C0577A9CBF3B9CE49EF+++35010DE" : "skios-private",
+    "770312C35F9670E545ECEE265341B0D08BAA69AF+++82592AA" : "skios-fcc"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "SamKnowsFCC",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -31,42 +31,42 @@
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:SamKnows\/skios-private.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "48E6D7BDDF5E0C90AACE8C0577A9CBF3B9CE49EF+++89AF249"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "48E6D7BDDF5E0C90AACE8C0577A9CBF3B9CE49EF+++35010DE"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:SamKnows\/skios-fcc.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "770312C35F9670E545ECEE265341B0D08BAA69AF+++1603D6D"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "770312C35F9670E545ECEE265341B0D08BAA69AF+++82592AA"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:SamKnows\/skios.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D91EDEB9FA0CF30BABCAAC7AB6EA10F9FC3CE8AD+++C8E73CE"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D91EDEB9FA0CF30BABCAAC7AB6EA10F9FC3CE8AD+++48EF10A"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:SamKnows\/skios.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D91EDEB9FA0CF30BABCAAC7AB6EA10F9FC3CE8AD+++CCAC1F2"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D91EDEB9FA0CF30BABCAAC7AB6EA10F9FC3CE8AD+++869D97C"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:SamKnows\/skios.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D91EDEB9FA0CF30BABCAAC7AB6EA10F9FC3CE8AD+++FE35879"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D91EDEB9FA0CF30BABCAAC7AB6EA10F9FC3CE8AD+++A0A225D"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:SamKnows\/skios-core.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FF60F452D9D908C39D3F64D249797A91096C51B0+++977F4D6"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FF60F452D9D908C39D3F64D249797A91096C51B0+++5851008"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:SamKnows\/skios-core.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FF60F452D9D908C39D3F64D249797A91096C51B0+++98C9FE1"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FF60F452D9D908C39D3F64D249797A91096C51B0+++B841C7B"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:SamKnows\/skios-core.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FF60F452D9D908C39D3F64D249797A91096C51B0+++E61CEA2"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FF60F452D9D908C39D3F64D249797A91096C51B0+++CC48F11"
     }
   ]
 }
