@@ -104,6 +104,7 @@
 		B29729CF184F7DB6006120F8 /* FCC-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B29729CE184F7DB6006120F8 /* FCC-iPad.storyboard */; };
 		B2A41C0618D9CD8A00887CD2 /* SETTINGS.png in Resources */ = {isa = PBXBuildFile; fileRef = B2A41C0418D9CD8A00887CD2 /* SETTINGS.png */; };
 		B2A41C0718D9CD8A00887CD2 /* SETTINGS@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B2A41C0518D9CD8A00887CD2 /* SETTINGS@2x.png */; };
+		B2A5444E1BAFEAC800FD22A8 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A5444D1BAFEAC800FD22A8 /* libc++.tbd */; };
 		B2ABEE3A17B912910096A324 /* FCC-iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2ABEE3917B912910096A324 /* FCC-iPhone.storyboard */; };
 		B2AD24671820FCB0002BA4F3 /* FCCGraphForResultsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2AD24661820FCB0002BA4F3 /* FCCGraphForResultsTests.m */; };
 		B2AF520717CF537800815146 /* FCCSchedulerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2AF520217CF537700815146 /* FCCSchedulerTests.m */; };
@@ -226,6 +227,7 @@
 		B29729CE184F7DB6006120F8 /* FCC-iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "FCC-iPad.storyboard"; sourceTree = "<group>"; };
 		B2A41C0418D9CD8A00887CD2 /* SETTINGS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SETTINGS.png; sourceTree = "<group>"; };
 		B2A41C0518D9CD8A00887CD2 /* SETTINGS@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SETTINGS@2x.png"; sourceTree = "<group>"; };
+		B2A5444D1BAFEAC800FD22A8 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		B2ABEE3917B912910096A324 /* FCC-iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "FCC-iPhone.storyboard"; sourceTree = "<group>"; };
 		B2AD24661820FCB0002BA4F3 /* FCCGraphForResultsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCCGraphForResultsTests.m; sourceTree = "<group>"; };
 		B2AF520217CF537700815146 /* FCCSchedulerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCCSchedulerTests.m; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2A5444E1BAFEAC800FD22A8 /* libc++.tbd in Frameworks */,
 				B2697B4D1A232F3A0077C360 /* QuickLook.framework in Frameworks */,
 				B2697B4B1A232F330077C360 /* MobileCoreServices.framework in Frameworks */,
 				B2697B491A232F2B0077C360 /* AssetsLibrary.framework in Frameworks */,
@@ -334,6 +337,7 @@
 		51BC81D1174CF73500415B6A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B2A5444D1BAFEAC800FD22A8 /* libc++.tbd */,
 				B2697B4C1A232F3A0077C360 /* QuickLook.framework */,
 				B2697B4A1A232F330077C360 /* MobileCoreServices.framework */,
 				B2697B481A232F2B0077C360 /* AssetsLibrary.framework */,
@@ -870,7 +874,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -885,6 +889,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "de8e402a-3a90-4d55-b7eb-6315471edb4a";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -900,7 +905,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -908,6 +913,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "9f751694-e955-4c8f-a3c1-c5be3cad2f01";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -917,7 +923,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -930,7 +937,7 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "cf823dc0-6975-49e3-8422-76885b81c93a";
+				PROVISIONING_PROFILE = "de8e402a-3a90-4d55-b7eb-6315471edb4a";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -940,7 +947,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -953,7 +961,7 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ee7a9e71-3e1a-4e67-961b-ee281f5e6fb8";
+				PROVISIONING_PROFILE = "d2e57ad4-137b-4a89-a148-56227d1e3c77";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
