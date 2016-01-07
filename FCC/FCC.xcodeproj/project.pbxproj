@@ -109,6 +109,8 @@
 		B2AD24671820FCB0002BA4F3 /* FCCGraphForResultsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2AD24661820FCB0002BA4F3 /* FCCGraphForResultsTests.m */; };
 		B2AF520717CF537800815146 /* FCCSchedulerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2AF520217CF537700815146 /* FCCSchedulerTests.m */; };
 		B2B0770418D73E4600FFAE12 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2B0770318D73E4600FFAE12 /* XCTest.framework */; };
+		B2BCE5661C3E5D9A002C21FA /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BCE5651C3E5D9A002C21FA /* AddressBook.framework */; };
+		B2BCE5681C3E5EAA002C21FA /* Schedule_FCC.xml in Resources */ = {isa = PBXBuildFile; fileRef = B2BCE5671C3E5EAA002C21FA /* Schedule_FCC.xml */; };
 		B2BE448F17C7955300C96D58 /* FCCHttpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BE448E17C7955300C96D58 /* FCCHttpTests.m */; };
 		B2D358E51920FC260098714D /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2D358E41920FC260098714D /* Entitlements.plist */; };
 		B2DC503D18C86BAE00E69F36 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2DC503C18C86BAE00E69F36 /* CoreText.framework */; };
@@ -232,6 +234,8 @@
 		B2AD24661820FCB0002BA4F3 /* FCCGraphForResultsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCCGraphForResultsTests.m; sourceTree = "<group>"; };
 		B2AF520217CF537700815146 /* FCCSchedulerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCCSchedulerTests.m; sourceTree = "<group>"; };
 		B2B0770318D73E4600FFAE12 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B2BCE5651C3E5D9A002C21FA /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		B2BCE5671C3E5EAA002C21FA /* Schedule_FCC.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Schedule_FCC.xml; sourceTree = "<group>"; };
 		B2BE448E17C7955300C96D58 /* FCCHttpTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCCHttpTests.m; sourceTree = "<group>"; };
 		B2D358E41920FC260098714D /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = SOURCE_ROOT; };
 		B2DC503C18C86BAE00E69F36 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
@@ -257,6 +261,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2BCE5661C3E5D9A002C21FA /* AddressBook.framework in Frameworks */,
 				B2A5444E1BAFEAC800FD22A8 /* libc++.tbd in Frameworks */,
 				B2697B4D1A232F3A0077C360 /* QuickLook.framework in Frameworks */,
 				B2697B4B1A232F330077C360 /* MobileCoreServices.framework in Frameworks */,
@@ -337,6 +342,7 @@
 		51BC81D1174CF73500415B6A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B2BCE5651C3E5D9A002C21FA /* AddressBook.framework */,
 				B2A5444D1BAFEAC800FD22A8 /* libc++.tbd */,
 				B2697B4C1A232F3A0077C360 /* QuickLook.framework */,
 				B2697B4A1A232F330077C360 /* MobileCoreServices.framework */,
@@ -393,6 +399,7 @@
 		51BC8202174CFB3100415B6A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B2BCE5671C3E5EAA002C21FA /* Schedule_FCC.xml */,
 				B281C15F1899558100B19ADB /* Wifiservice.png */,
 				B281C1601899558100B19ADB /* Wifiservice@2x.png */,
 				B281C1611899558100B19ADB /* Cell_phone_icon.png */,
@@ -738,6 +745,7 @@
 				B20659861855DE9F0097A611 /* btn_run.png in Resources */,
 				B2E3C09517E1BB5000A01F45 /* Icon_FCC_120.png in Resources */,
 				B20658A2185221760097A611 /* Icon_FCC_152.png in Resources */,
+				B2BCE5681C3E5EAA002C21FA /* Schedule_FCC.xml in Resources */,
 				B281C1651899558100B19ADB /* Cell_phone_icon.png in Resources */,
 				51B7B89717661AF10026CFB1 /* GRAPH.png in Resources */,
 				B2E3C09317E1BB5000A01F45 /* Icon_FCC_80.png in Resources */,

@@ -26,6 +26,16 @@
   //return @"SK_Test";
 }
 
+-(NSString *) getUrlForServerQuery {
+  // Should never be required, as this app variant doesn't use Activation.
+  SK_ASSERT(false);
+  return @"http://dcs-mobile-fcc.samknows.com/mobile/dcs";
+}
+
+-(NSString*)getBaseUrlForUpload {
+  return @"http://dcs-mobile-fcc.samknows.com";
+}
+
 -(NSString *) getBaseUrlString {
   return @"http://dcs-mobile-fcc.samknows.com/mobile/dcs";
 }
@@ -75,6 +85,32 @@
   return YES;
 }
 
+//
+// No need for activation!
+//
+
+// We're always activated
+- (BOOL)isActivated
+{
+  return YES;
+}
+
+// By default, all app variants support activation.
+// Newer apps don't require this...
+- (BOOL)isActivationSupported {
+  return NO;
+}
+
+// We have a built-in schedule!
+- (NSString *)schedulePath
+{
+  NSString *schedulePath = skGetResourcePathFromBundleUsingClass(FCCAppDelegate.class, @"Schedule_FCC.xml");
+#ifdef DEBUG
+  NSFileManager *fm = [NSFileManager defaultManager];
+  SK_ASSERT([fm fileExistsAtPath:schedulePath]);
+#endif // DEBUG
+  return schedulePath;
+}
 
 @end
 
