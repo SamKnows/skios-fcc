@@ -116,25 +116,4 @@
 
 @implementation FCCAppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-  // Initialize crash reporting!
-  // Do this ONLY if NOT a debug build...
-  
-#ifdef DEBUG
-  //  NSLog(@"DEBUG: this is a debug build, so NOT initializing crash reporting");
-#else // DEBUG
-  NSLog(@"DEBUG: this is NOT a debug build, so initializing crash reporting");
-  [[BITHockeyManager sharedHockeyManager] setDebugLogEnabled: YES];
-  
-  [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:@"5a987d025b3fadc9d6a3f8d7b8ba9080"  delegate:self];
-  [BITHockeyManager sharedHockeyManager].crashManager.crashManagerStatus = BITCrashManagerStatusAutoSend;
-  
-  [[BITHockeyManager sharedHockeyManager] startManager];
-  //[[BITHockeyManager sharedHockeyManager].authenticator authenticateInstallation];
-#endif // DEBUG
-  
-  return [super application:application didFinishLaunchingWithOptions:launchOptions];
-}
-
 @end

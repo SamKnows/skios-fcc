@@ -9,7 +9,7 @@
 #import "OCMock/OCMock.h"
 
 @interface SKHttpTest()
-- (void)storeOutputResults;
+- (void)storeOutputResults:(double)aValue;
 @end
 
 @interface FCCHttpTests : XCTestCase<SKHttpTestDelegate>
@@ -66,7 +66,7 @@
   SKHttpTest *httpTest = [self createHttpTestInstance];
   XCTAssertNotNil(httpTest.outputResultsDictionary, @"");
  
-  [httpTest storeOutputResults];
+    [httpTest storeOutputResults:42];
   
   XCTAssertNotNil(httpTest.outputResultsDictionary, @"");
 }
