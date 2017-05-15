@@ -7,13 +7,12 @@
 
 #import <UIKit/UIKit.h>
 
-#import <HockeySDK/HockeySDK.h>
 
 
 @interface FCCAppBehaviourDelegate : SKAppBehaviourDelegate
 
 @end
 
-@interface FCCAppDelegate : SKAAppDelegate<BITHockeyManagerDelegate>
+@interface FCCAppDelegate : SKAAppDelegate
 
 @end

@@ -73,9 +73,6 @@
 		B22E895C17C39353005D9094 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51BC81D2174CF73500415B6A /* UIKit.framework */; };
 		B22E895D17C39353005D9094 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51BC81D4174CF73500415B6A /* Foundation.framework */; };
 		B22E896317C39353005D9094 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B22E896117C39353005D9094 /* InfoPlist.strings */; };
-		B23B636B19A75F32003F381C /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23B636719A75F32003F381C /* HockeySDK.framework */; };
-		B23B636C19A75F33003F381C /* HockeySDK.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B23B636919A75F32003F381C /* HockeySDK.xcconfig */; };
-		B23B636D19A75F33003F381C /* HockeySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B23B636A19A75F32003F381C /* HockeySDKResources.bundle */; };
 		B24140C317C3C29C00ECAE8C /* FCCLocaleEnTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B24140C217C3C29C00ECAE8C /* FCCLocaleEnTests.m */; };
 		B25001DB188FC9FA004287B1 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25001DA188FC9FA004287B1 /* CoreFoundation.framework */; };
 		B25001DD188FCA07004287B1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25001DC188FCA07004287B1 /* CFNetwork.framework */; };
@@ -199,7 +196,6 @@
 		B22E896217C39353005D9094 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B22E896717C39353005D9094 /* FCCTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FCCTests-Prefix.pch"; sourceTree = "<group>"; };
 		B232599F195467CA00C03C2D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		B23B636719A75F32003F381C /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HockeySDK.framework; sourceTree = "<group>"; };
 		B23B636919A75F32003F381C /* HockeySDK.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = HockeySDK.xcconfig; sourceTree = "<group>"; };
 		B23B636A19A75F32003F381C /* HockeySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HockeySDKResources.bundle; sourceTree = "<group>"; };
 		B24140C217C3C29C00ECAE8C /* FCCLocaleEnTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCCLocaleEnTests.m; sourceTree = "<group>"; };
@@ -277,7 +273,6 @@
 				51766972174E20CB00C34BEA /* QuartzCore.framework in Frameworks */,
 				B21C94E017B0FF170001C7C5 /* CoreData.framework in Frameworks */,
 				51D84EE2174FE08F00AD7794 /* libsqlite3.dylib in Frameworks */,
-				B23B636B19A75F32003F381C /* HockeySDK.framework in Frameworks */,
 				51BC81D3174CF73500415B6A /* UIKit.framework in Frameworks */,
 				51BC81D5174CF73500415B6A /* Foundation.framework in Frameworks */,
 				51BC81D7174CF73500415B6A /* CoreGraphics.framework in Frameworks */,
@@ -490,7 +485,6 @@
 		B23B636619A75F32003F381C /* HockeySDK.embeddedframework */ = {
 			isa = PBXGroup;
 			children = (
-				B23B636719A75F32003F381C /* HockeySDK.framework */,
 				B23B636819A75F32003F381C /* Resources */,
 			);
 			path = HockeySDK.embeddedframework;
@@ -649,7 +643,7 @@
 				ORGANIZATIONNAME = SamKnows;
 				TargetAttributes = {
 					51BC81CE174CF73500415B6A = {
-						DevelopmentTeam = V7JFVV7CG3;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 0;
@@ -696,7 +690,6 @@
 				B2E3C09417E1BB5000A01F45 /* Icon_FCC_60.png in Resources */,
 				B25DE078184E108A006327A6 /* notice1.htm in Resources */,
 				51BC81E9174CF73600415B6A /* Default-568h@2x.png in Resources */,
-				B23B636D19A75F33003F381C /* HockeySDKResources.bundle in Resources */,
 				511BADDD174E2BF300C86B9B /* Localizable.strings in Resources */,
 				512B8A04174E532C00025F37 /* NEXT.png in Resources */,
 				512B8A09174E699000025F37 /* AGREE.png in Resources */,
@@ -712,7 +705,6 @@
 				51C4ABFA1753A3E3003B4062 /* ALERT@2x.png in Resources */,
 				51C4ABFB1753A3E3003B4062 /* ALERT.png in Resources */,
 				B206589B18521C350097A611 /* Default-iPad-Landscape~ipad.png in Resources */,
-				B23B636C19A75F33003F381C /* HockeySDK.xcconfig in Resources */,
 				5185035A1754E84A00729CA7 /* GRAPH_BGD.png in Resources */,
 				B276EB601A3EE996006F84F2 /* libcore.strings in Resources */,
 				5185035B1754E84A00729CA7 /* GRAPH_BGD@2x.png in Resources */,
@@ -932,6 +924,8 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -940,12 +934,14 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FCC/FCC-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../../skios-core/**";
 				INFOPLIST_FILE = "FCC/FCC-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "de8e402a-3a90-4d55-b7eb-6315471edb4a";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -956,6 +952,8 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -964,12 +962,14 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FCC/FCC-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../../skios-core/**";
 				INFOPLIST_FILE = "FCC/FCC-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "d2e57ad4-137b-4a89-a148-56227d1e3c77";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};

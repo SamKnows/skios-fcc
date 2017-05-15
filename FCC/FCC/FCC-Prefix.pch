@@ -15,7 +15,7 @@
 
 #import <QuartzCore/QuartzCore.h>
 
-#import "../../skios-core/libcore/SKCore.h"
+#import "SKCore.h"
 
 
 // iOS Version Checking

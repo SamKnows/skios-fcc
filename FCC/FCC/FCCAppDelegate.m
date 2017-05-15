@@ -22,7 +22,7 @@
 
 -(NSString *) getEnterpriseId {
   //return @"GiancarloTest";
-  return @"FCC_Public";
+  return @"FCC_Open_Source";
   //return @"SK_Test";
 }
 
@@ -137,21 +137,4 @@
   return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }
 
-- (void)crashManagerWillSendCrashReport:(BITCrashManager *)crashManager {
-#ifdef _DEBUG
-  NSLog(@"DEBUG: crashManager:crashManagerWillSendCrashReport");
-#endif // _DEBUG
-}
-
-- (void)crashManager:(BITCrashManager *)crashManager didFailWithError:(NSError *)error {
-#ifdef _DEBUG
-  NSLog(@"DEBUG: crashManager:didFailWithError");
-#endif // _DEBUG
-}
-
-- (void)crashManagerDidFinishSendingCrashReport:(BITCrashManager *)crashManager {
-#ifdef _DEBUG
-  NSLog(@"DEBUG: crashManager:crashManagerDidFinishSendingCrashReport");
-#endif // _DEBUG
-}
 @end
